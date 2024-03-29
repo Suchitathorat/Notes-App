@@ -1,6 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 import mongoose, { model, Schema } from 'mongoose';
+import Note from './Models/node';
 import dotenv from 'dotenv'
 dotenv.config();
 
@@ -19,13 +20,7 @@ connectDB();
 
 const PORT=5000;
 
-//model design
-const noteSchema =new Schema({
-    title:String,
-    content:String,
-    category:String,
-})
-const Note =model("Note",noteSchema);
+
 
 
 //api to check health
