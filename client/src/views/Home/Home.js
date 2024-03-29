@@ -7,8 +7,8 @@ function Home() {
     const[notes ,setNotes]=useState([]);
 
     const loadNotes=async()=>{
-        const response =await axios.get("http://localhost:5000");
-        //(`${process.env.REACT_APP_API_URL}/notes`);
+        const response =await axios.get("http://localhost:5000/notes");
+    
 
         console.log(response.data.data);
 
