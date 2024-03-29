@@ -1,7 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 import mongoose, { model, Schema } from 'mongoose';
-import Note from './Models/node';
+import Note from './Models/node.js';
 import dotenv from 'dotenv'
 dotenv.config();
 
