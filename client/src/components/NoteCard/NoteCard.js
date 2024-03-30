@@ -28,11 +28,11 @@ function NoteCard({_id,title,content,category,loadNotes}) {
         className='delete-icon'
         onClick={deleteNote}></img>
 
-        <a href ={`/update/${_id}`}>
-        <img src={UpdateIcon}
-        alt='update-icon'
-        className='update-icon'/>
-        </a>
+        <Link to={`/update/${_id}`}>
+          <img src={UpdateIcon}
+          alt='edit-icon'
+          className='update-icon'/>
+        </Link>
     </div>
   )
 }
